@@ -1,0 +1,430 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font:18px "open sans", "helvetica";
+  overflow-x:hidden;
+}
+/*header*/
+header{
+  background:black;
+  color:white;
+  position:fixed;
+  width:100%;
+  z-index:2;
+}
+.contact-info{
+  margin:auto;
+  height:30px;
+  text-align:center;
+}
+.contact-info ul{
+  list-style:none;
+}
+.contact-info ul li:nth-child(1){
+  float:left;
+}
+.contact-info ul li:nth-child(2){
+  float:right;
+}
+.contact-info ul li{
+  display:inline-block;
+  margin:2px 10px;
+  font-size:17px;
+  font-family:skia;
+}
+.contact-info span{
+  font-weight:bold;
+  font:20px sans-serif;
+}
+/*aside*/
+.aside{
+  width:230px;
+  background-color: #f26649;
+  width: 15%;
+  padding:6em 1em 23.6em 1em;
+  text-align:center;
+  position:fixed;
+  z-index:1;
+}
+.logo{
+  margin:60px 0px;
+  color:slateblue;
+  font:28px geneva;
+}
+aside ul{
+  text-align:center;
+  font-size:25px;
+}
+aside ul li{
+  margin:20px 0px;
+  list-style:none; 
+}
+aside a{
+  text-decoration:none;
+  color:white;
+  padding:10px 10px;
+  transition:0.2s ease-in;
+}
+aside a:hover{
+  color:blueviolet;
+}
+/*slider*/
+@keyframes slider {
+
+0% {
+	left: 0;
+}
+
+20% {
+	left: 0;
+}
+
+25% {
+	left: -100%;
+}
+
+45% {
+    left: -100%;
+
+}
+
+50% {
+		left: -200%;
+
+}
+
+70% {
+	left: -200%;
+}
+
+75% {
+	left: -300%;
+}
+
+95% {
+	left: -300%;
+}
+
+100% {
+	left: -400%;
+
+}
+
+}
+
+#slider {
+	overflow: hidden;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+    height:500px;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 8s slider infinite; 
+
+}
+
+/*content*/
+.content{
+  padding:10px 6% 40px 6%;
+  width:72%;
+  float:right;
+  background:white;
+  text-align: center;
+}
+.content p{
+  padding:20px 0px;
+  text-align:center;
+  line-height:37px;
+  color:#965d9b;
+}
+h1{
+  font:28px geneva;
+  color:blueviolet;
+  text-align:center;
+  padding:10px 0px;
+}
+.row{
+  text-align:center;
+}
+.category{
+  color:red;
+}
+.pro-grid{
+  border:0.5px solid green;
+  border-radius:7px;
+  width:220px;
+  display:inline-table;
+  margin:10px 5px 10px 5px;
+  text-align:center;
+  padding:10px 0px;
+}
+.title{
+  color:dodgerblue;
+  padding:20px 0px;
+}
+.intro{
+  padding:0px 0px 30px 0px;
+  font-family:skia;
+  color:green;
+  line-height:24px;
+}
+ span{
+  color:dodgerblue;
+}
+.form{
+  max-width:250px;
+  padding:20px 40px;
+  border-radius:10px 30px 10px 30px;
+  border:0.7px solid green;
+  margin:auto;
+  background-color:rgba(128,0,0, 0.8);
+}
+form input{
+  display:block;
+  padding:10px 20px;
+  border-radius:20px;
+  margin:5px auto;
+  font:18px geneva;
+  background:transparent;
+  color:white;
+}
+form select{
+  width:250px;
+  color:grey;
+}
+form select, textarea{
+  display:block;
+  padding:10px 20px;
+  border-radius:20px;
+  margin:5px auto;
+  color:white;
+  font:18px geneva;
+  background:transparent;
+  color:white;
+}
+/*table*/
+.specs-box{
+  padding:20px 20px;
+  background-color:rgba(140, 14, 14,0.7);
+    border-radius:7px; 
+}
+
+table{
+    width:90%;
+  margin:auto;
+}
+
+table, th, td {
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table tr th{
+    font-size:20px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:deepskyblue;
+}
+
+table tr th:nth-child(1) {
+    text-align:center;
+}
+table tr th:nth-child(2) {
+    padding-left:10px;
+}
+
+table tr td{
+    padding-left:20px;
+    font-family: "Open Sans", sans-serif;
+    color:aqua;
+    font-size:17px 
+}
+
+/*footer*/
+.footer{
+  width:72%;
+  float:right;
+  background:black;
+  padding:20px 6% 10px 6%;
+}
+.footer-content{
+  margin:auto;
+  text-align: center;
+}
+.grid{
+  width:280px;
+  display:inline-table;
+  margin:3px;
+  text-align:center;
+}
+.footer-content div:nth-child(1){
+  float:left;
+}
+.footer-content div:nth-child(3){
+  float:right;
+}
+.heading{
+  color:white;
+  text-decoration:underline; 
+  font-size:24px;
+}
+.subscriber-form{
+  margin-top:10px;
+}
+.subscriber-form input{
+  display:flex;
+  margin:10px auto;
+  border:0.5px solid grey;
+}
+input[type="email"]{
+  padding:9px 20px;
+  border-radius:20px;
+  background:transparent;
+  color:white;
+  transition:0.2s ease-in;
+}
+input[type="email"]:active{
+  border-radius:10px;
+}
+input:focus, input:active{
+  outline:1.5px solid white;
+  outline-style:solid;
+}
+input[type="submit"]{
+  background-color:transparent;
+  padding:5px 20px;
+  margin-top:10px;
+  color:grey;
+  font:20px skia;
+  border-radius:10px;
+  cursor:pointer;
+}
+.grid ul{
+  color:grey;
+  list-style:none;
+  text-align:;
+  margin:10px 0px;
+}
+.grid ul li{
+  padding:10px 0px;
+}
+.grid ul li img{
+  padding:0px 10px;
+}
+.right{
+  text-align:center;
+  font:15px skia;
+  color:white;
+  margin:15px auto;
+  padding:6px;
+}
+/*responsive*/
+@media screen and (max-width:1208px){
+  .aside{
+    background-color: #f26649;
+    width: 100%;
+    text-align:center;
+    position:relative;
+    padding:10px 0px 30px 0px;
+  }
+  .footer{
+    width:100%;
+    float:right;
+    background:black;
+    padding:20px 2% 10px 0%;
+  }
+  .content{
+    width:90%;
+  }
+  aside ul{
+    font-size:16px;
+    margin-top:-30px;
+  }
+  .logo{
+    margin-top:30px;
+  }
+}
+@media screen and (max-width:870px){
+  .grid{
+    width:100%;
+    display:inline;
+    margin:3px;
+  }
+  .logo{
+    margin-top:50px;
+  }
+}
+@media screen and (max-width:790px){
+  .grid{
+    display:inline;
+  }
+  aside ul{
+    font-size:17px;
+    margin-top:-40px;
+  }
+  #slider {
+	overflow: hidden;
+  }
+
+  #slider figure img {
+      height:400px;
+  }
+}
+@media screen and (max-width:470px){
+  .specs-box{
+    padding:20px 0px;
+    background-color:rgba(140, 14, 14,0.7);
+      border-radius:7px; 
+  }
+  th, td {
+      padding:0px;
+      text-align: left;
+  }
+  table tr th{
+      font-size:17px;
+  }
+  table tr th:nth-child(1) {
+      width:0px;
+  }
+  table tr th:nth-child(2) {
+      padding-left:1px;
+  }
+  table tr td{
+    padding:0px 0px;
+    font-size:14px;
+  }
+  .aside{
+    background-color: #f26649;
+    width: 100%;
+    text-align:center;
+    position:relative;
+    padding:10px 0px 1px 0px;
+  }
+  .logo{
+    font-size:22px;
+  }
+  aside ul{
+    font-size:13px;
+    margin-top:-40px;
+  }
+  #slider figure img {
+      height:300px;
+  }
+}
+
